@@ -35,6 +35,9 @@ function checkLoginData(login, password){
             'value',
             (data) => {
                 recData = data.val() 
+                if(recData == null){
+                    alert('Pls register')
+                }
                 if(recData.password === password){
                     resolve()
                     ref.off()
