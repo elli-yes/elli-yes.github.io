@@ -24,7 +24,7 @@ function modalLogin(){
                     document.getElementById('pass').value).then(()=>{
                         console.log('prikol')
                         test.close()
-                        $.inserter($.formMainWindow())
+                        $.inserter($.formMainWindow(accountData))
                     }
                     )
                 } 

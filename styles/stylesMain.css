@@ -45,7 +45,7 @@ body{
     background-color: #E5C78A;
 }
 .btnGood:hover ,.btnSo:hover{
-    transition: all 0.5s;
+    transition: all 0.3s;
     opacity: 80%;
     border-color: aliceblue;
 }

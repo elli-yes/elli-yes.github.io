@@ -22,6 +22,26 @@
     height: 80px;
     background-color: #DAAF58;
 }
+.leftBarTitle{
+    justify-content: space-between;
+}
+.newChat{
+    height: 80px;
+    width: 80px;
+    margin: 0px;
+    background-color:#D39F36;
+    border: #222222 solid 2px;
+    border-radius: 40px 0px 0px 40px;
+}
+.titleHeader{
+    margin-left: 100% ;
+}
+#ncSvg{
+    height: 50%;
+    width: 50%;
+    margin-left: 20%;
+}
+
 .leftBarBody{
     width: 100%;
     height: 80%;
@@ -40,35 +60,47 @@
 }
 .textCenter{
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 30px;
     font-weight: bold;
 }
 .leftBarFooter{
-    padding: 5px;
     display: flex;
     justify-content: space-around;
-    justify-content: center;
     align-items: center;
-    
 }
 .accountBtn{
-    margin: 5px;
-    flex-basis: 40%;
+    height: 70px;
+    width: 70px;
+    margin: 0px;
+}
+.accountBtnImg{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.accountSetting{
+    height: 70px;
+    width: 70px;
+    margin: 0px;
+}
+.accountSettingIco{
+    width: 80%;
+    height: 80%;
 }
 
 .chat{
+    margin: 0px;
     margin-bottom: 10px;
     width: 100%;
     height: 65px;
     background-color: #D39F36;
     border-radius: 22px;
-    position: relative;
     border: #222222 solid 2px;
     display: flex;
-    align-items: center;
+    justify-content: unset;
 }
+
 .chatName{
     margin: 10px;
 }
@@ -86,27 +118,64 @@
     border-radius: 20px;
     /* border: #222222 solid ; */
 }
+.avatarMain{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+}
 
 .mainBarHeader{
     background-color: #333333;
     height: 80px;
     display: flex;
 }   
+
 .mainBarBody{
     overflow: hidden;
     height: 80%;
+    color: #D39F36;
     /* width: 100%; */
+    justify-content: center;
+}
+.mainHeaderTitle{
+    color: #D39F36;
+    margin-left: 5%;
 }
 .mainBarBody:hover{
     overflow: auto;
 }
+
+/* Footer */
 .mainBarFooter{
     background-color: #333333;
     height: 80px;
-    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
 }
-.avatarMain{
-    height: 70px;
-    width: 70px;
-    margin: 5px;
+.footerBar{
+    background-color:#DAAF58;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.addDocument{
+    margin: 0px;
+}
+.addBtnIco{
+    height: 70%;
+    width: 70%;
+    /* margin-left: 15%;
+    margin-top: 15%; */
+}
+.mainMessageBox {
+    width: 70%;
+}
+.sendBtn{
+    margin: 0px;
+}
+.sendBtnIco{
+    width: 80%;
+    height: 80%;
+    /* margin-left: 10%;
+    margin-top: 2%; */
 }

@@ -14,7 +14,7 @@ function checkCreateAccountData(login, password, pass2){
                     else{
                         ref.off()
                         ref.set({password:`${password}`})
-                        console.log('pushed')
+                        resolve()
                     }
                       
                 }

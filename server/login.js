@@ -26,7 +26,7 @@ let dataBase = firebase.database()
 //     },
 //     (errData) => console.error('Error:' + errData)
 //   )
-
+let accountData
 function checkLoginData(login, password){
     const ref = dataBase.ref(`users/${login}`)
     let recData
@@ -38,7 +38,8 @@ function checkLoginData(login, password){
                 if(recData == null){
                     alert('Pls register')
                 }
-                if(recData.password === password){
+                else if(recData.password === password){
+                    accountData = recData
                     resolve()
                     ref.off()
                 }
